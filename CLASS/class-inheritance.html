@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Inheritance</title>
+</head>
+<body>
+    <script>
+
+        class Employee {
+        
+        sayHello(name) {
+            console.info(`Hello ${name}, My Nama adalah employee ${this.name}`);
+        }
+        
+        }
+
+        class Manager extends Employee{
+            sayHello(name) {
+            console.info(`Hello ${name}, My Nama adalah manager ${this.name}`);
+        }
+        
+        }
+
+        const dodo = new Employee();
+        dodo.name = "dodo";
+        dodo.sayHello("ipin");
+
+        const eko = new Manager();
+        eko.name = "Eko";
+        eko.sayHello("ipin");
+
+        console.info(dodo);
+        console.info(eko);
+    </script>
+</body>
+</html>
+
+</body>
+</html>
